@@ -27,31 +27,31 @@ $ serverless deploy
 After deploying, you should see output similar to:
 
 ```bash
-Deploying aws-node-http-api-project to stage dev (us-east-1)
+Deploying aws-node-http-api-project to stage dev (sa-east-1)
 
 ✔ Service deployed to stack aws-node-http-api-project-dev (152s)
 
-endpoint: GET - https://xxxxxxxxxx.execute-api.us-east-1.amazonaws.com/tasks
+endpoint: GET - https://b5azqtya4i.execute-api.sa-east-1.amazonaws.com/tasks
 functions:
   getTasklist: aws-node-http-api-project-dev-getTasklist (1.9 kB)
 ```
 
-endpoint: GET - https://xxxxxxxxxx.execute-api.us-east-1.amazonaws.com/tasks/{id}
+endpoint: GET - https://b5azqtya4i.execute-api.sa-east-1.amazonaws.com/tasks/{id}
 functions:
   getTask: aws-node-http-api-project-dev-getTask (1.9 kB)
 ```
 
-endpoint: POST - https://xxxxxxxxxx.execute-api.us-east-1.amazonaws.com/tasks
+endpoint: POST - https://b5azqtya4i.execute-api.sa-east-1.amazonaws.com/tasks
 functions:
   addTask: aws-node-http-api-project-dev-addTask (1.9 kB)
 ```
 
-endpoint: PUT - https://xxxxxxxxxx.execute-api.us-east-1.amazonaws.com/tasks/{id}
+endpoint: PUT - https://b5azqtya4i.execute-api.sa-east-1.amazonaws.com/tasks/{id}
 functions:
   editTask: aws-node-http-api-project-dev-editTask (1.9 kB)
 ```
 
-endpoint: DELETE - https://xxxxxxxxxx.execute-api.us-east-1.amazonaws.com/tasks/{id}
+endpoint: DELETE - https://b5azqtya4i.execute-api.sa-east-1.amazonaws.com/tasks/{id}
 functions:
   deleteTask: aws-node-http-api-project-dev-editTask (1.9 kB)
 ```
@@ -63,7 +63,7 @@ _Note_: In current form, after deployment, your API is public and can be invoked
 After successful deployment, you can call the created application via HTTP:
 
 ```bash
-curl https://xxxxxxx.execute-api.us-east-1.amazonaws.com/
+curl https://b5azqtya4i.execute-api.sa-east-1.amazonaws.com/
 ```
 
 Which should result in response similar to the following (removed `input` content for brevity):
