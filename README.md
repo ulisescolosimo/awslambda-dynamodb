@@ -31,9 +31,29 @@ Deploying aws-node-http-api-project to stage dev (us-east-1)
 
 ✔ Service deployed to stack aws-node-http-api-project-dev (152s)
 
-endpoint: GET - https://xxxxxxxxxx.execute-api.us-east-1.amazonaws.com/
+endpoint: GET - https://xxxxxxxxxx.execute-api.us-east-1.amazonaws.com/tasks
 functions:
-  hello: aws-node-http-api-project-dev-hello (1.9 kB)
+  getTasklist: aws-node-http-api-project-dev-getTasklist (1.9 kB)
+```
+
+endpoint: GET - https://xxxxxxxxxx.execute-api.us-east-1.amazonaws.com/tasks/{id}
+functions:
+  getTask: aws-node-http-api-project-dev-getTask (1.9 kB)
+```
+
+endpoint: POST - https://xxxxxxxxxx.execute-api.us-east-1.amazonaws.com/tasks
+functions:
+  addTask: aws-node-http-api-project-dev-addTask (1.9 kB)
+```
+
+endpoint: PUT - https://xxxxxxxxxx.execute-api.us-east-1.amazonaws.com/tasks/{id}
+functions:
+  editTask: aws-node-http-api-project-dev-editTask (1.9 kB)
+```
+
+endpoint: DELETE - https://xxxxxxxxxx.execute-api.us-east-1.amazonaws.com/tasks/{id}
+functions:
+  deleteTask: aws-node-http-api-project-dev-editTask (1.9 kB)
 ```
 
 _Note_: In current form, after deployment, your API is public and can be invoked by anyone. For production deployments, you might want to configure an authorizer. For details on how to do that, refer to [http event docs](https://www.serverless.com/framework/docs/providers/aws/events/apigateway/).
